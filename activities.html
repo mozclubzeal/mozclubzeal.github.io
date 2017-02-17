@@ -72,18 +72,18 @@
 					<div class="inner">
 						<h2 class="major">Get in touch</h2>
 						<p>Feel free to contact us for any suggestions, queries or complaints.</p>
-						<form method="post" action="mailto:mcz@zealeducation.com" enctype="text/plain">
+						<form id="gform" enctype="text/plain" action="https://docs.google.com/a/zealeducation.com/forms/d/e/1FAIpQLScHFljCdQWS2MAG3ycfeJO5g7oQOOAG_HrN0W130H9zOOAzjA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 							<div class="field">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="entry.1648818603" id="entry.1648818603" />
 							</div>
 							<div class="field">
 								<label for="email">Email</label>
-								<input type="email" name="email" id="email" />
+								<input type="email" name="entry.1302139710" id="entry.1302139710" />
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
+								<textarea name="entry.1417894491" id="entry.1417894491" rows="4"></textarea>
 							</div>
 							<ul class="actions">
 								<li><input type="submit" value="Send Message" /></li>
@@ -119,6 +119,13 @@
 		<!-- Scripts -->
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+				$('#gform').on('submit', function(e) {
+			  	$('#gform *').fadeOut(2000);
+			  	$('#gform').prepend('Thank you for getting in touch with us. We\'ll get back to you soon! :)');
+			  	});
+			</script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
